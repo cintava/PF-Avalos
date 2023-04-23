@@ -25,6 +25,7 @@
 }
 .seccion_formulario form {
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 .seccion_formulario input:not(textarea) {
     height: 40px;
