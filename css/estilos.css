@@ -106,9 +106,6 @@ body{
 /* ----- Fin - Main---- */
 /* ----- nosotros ---- */
 
-.section__quienessomos{
-    background-color: rgb(127, 133, 131);    
-}
 .section__quienessomos {
     text-align: center;
     padding-top: 5%;
@@ -118,11 +115,9 @@ body{
     padding-right: 20%;
     padding-left: 20%; */
 }
-.section__quienessomos h2 a{
-    background-color: antiquewhite;
-}
+
 .section__quienessomos p {
-    background-color: #bac2ff;
+    
     padding-top: 20px ;   
 }
 
@@ -130,15 +125,11 @@ body{
 
 /* ----- productos y servicios  ---- */
 
-.section__servyprod h2 a{
-    background-color: #e62edd;
-}
+
 .section__servyprod {
-    background-color: #bac2ff;
     padding-bottom: 15%;
 }
 .section__servyprod .publicoyprivado {
-    background-color: #a28ffd;
     padding-top: 100px ;
 }
 
@@ -157,12 +148,13 @@ body{
 
 .section__concursopublico {
     padding-bottom: 15%;
+    background-color: #86cfff;
+    padding-top: 40px;
 }
-.section__concursopublico h2 a {
-    background-color: #f947f0;
+.section__concursopublico  h2 a {
+    color: #ffffff;
 }
 .section__concursopublico .concursos { 
-    background-color: #86cfff;
     margin-top: 20px; 
 }
 .section__concursopublico img {
@@ -174,13 +166,9 @@ body{
 /* ----- pregutas frecuentes  ---- */
 
 .section__preguntafrecuente {
-    background-color: #d868d8;
-}
-.section__preguntafrecuente h2 a {
-    background-color: #f947f0;
+    padding-top: 30px;
 }
 .section__preguntafrecuente .preguntas { 
-    background-color: #e0e635;
     padding-top: 100px;
     margin-bottom: 10%;
 }
