@@ -16,3 +16,23 @@
     align-items: flex-start;
     padding-top: 80px;
 }
+
+.seccion_formulario {
+    background-color: #d2f5ff;
+}
+.logo_formulario img {
+    width: 50%;
+}
+.seccion_formulario form {
+    padding-top: 40px;
+}
+.seccion_formulario input:not(textarea) {
+    height: 40px;
+}
+.seccion_formulario .boton {
+    padding-top: 20px;
+}
+.seccion_formulario label {
+    color: #00BBF0;
+    font-weight: bold;
+}
