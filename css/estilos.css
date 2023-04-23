@@ -88,12 +88,7 @@ body{
     padding-top: 300px;
     padding-bottom: 500px;
 }
-.seccion_contacto {
-    background-color: #00BBF0;
-    margin-top: 160px; /*Para generar espacio entre el borde superior y la imagen*/
 
-    padding: 100px 10px 500px 10px;
-}
 .edificio_destacado p {
     font-size: 50px;
     font-weight: bold;

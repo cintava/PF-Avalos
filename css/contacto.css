@@ -1,0 +1,18 @@
+.seccion_contacto {
+    margin-top: 40px; /*Para generar espacio entre el borde superior y la imagen*/
+    padding: 100px 0 500px 10px;
+}
+.seccion_contacto .titulo {
+    padding: 150px 0 250px 50px;
+    background-color: #00BBF0;
+    text-align: left;
+    color: white;
+}
+.mapas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 80px;
+}
