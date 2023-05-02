@@ -28,7 +28,8 @@ a {
 body{ 
     font-family: 'Montserrat', sans-serif; /*Tipogafia Web*/
     color: #6A6A6A;
-    background-color: #F9F9F9;
+    background-color: whitesmoke;
+   /* background-color: #F9F9F9;*/
 }
 /* ----- Fin - Estilos Globales ---- */
 
@@ -47,16 +48,17 @@ body{
     margin-left: 40px;
 }
 .fondo_blanco {
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
 }
 .menu_general .navbar {
     padding-top: 0;
 }
 .menu_general .navbar-brand img {
-    height: 115px;
+    height: 80px;
 }
 .menu_general .navbar_links li {
     margin-right: 25px;  
+    font-size: 20px;
 }
 .menu_general .navbar_links a:hover {
     color: #00BBF0;
@@ -64,6 +66,21 @@ body{
 
 .navbar_links .nav-link.active {
     color: #00BBF0;
+    position: relative;
+}
+
+.navbar_links .nav-link.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00BBF0;
+    border-radius: 4px;
+    scale: 1;
+    transform-origin: left;
+    transition: scale 0.25s;
 }
 
 .navbar_links .link_animacion {
@@ -102,27 +119,28 @@ body{
 
 /* ----- main ---- */
 .edificio_destacado {
-    margin-top: 160px; /*Para generar espacio entre el borde superior y la imagen*/
+    margin-top: 130px; /*Para generar espacio entre el borde superior y la imagen*/
     background-image: url('../multimedia/Image\ Container.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 
-    padding-top: 300px;
+    padding-top: 230px;
     padding-bottom: 500px;
 }
 
 .edificio_destacado p {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     color: #ffffff;  
-    margin-right: 50%;
-    margin-left: 15%;
+    margin-left: 15%;  
     line-height: 150%;
 }
 
+
+
 .edificio_destacado .textochico {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 40px;
 }
@@ -221,16 +239,33 @@ body{
 }
 
 /* ----- Fin - Pie de pagina ---- */
+
+/* Para modificar comportamientos que tengan cosas similares a col-xl */
 @media screen and (max-width: 1200px) {
     .navbar_links li {
         text-align: right;
     }
+
+    .edificio_destacado p {
+        font-size: 36px;
+        margin-left: 14%;  
+    }
+
+    .edificio_destacado .textochico {
+        font-size: 26px;
+    }
+
+
 }
 @media screen and (max-width: 992px) {
+  
     .edificio_destacado p {
-        margin-right: 5%;
-        margin-left: 10%;
+        margin-left: 10%;  
+        
+
     }
+  
+
     .section__concursopublico .concursos {
         display: flex;
         flex-direction: column;
@@ -262,12 +297,11 @@ body{
 }
 @media screen and (max-width: 768px) {
     .edificio_destacado p {
-        font-size: 21pt;
-        margin-right: 15%;
+        font-size: 27px;
         margin-left: 10%;
     }
     .edificio_destacado .textochico {
-        font-size: 19pt;
+        font-size: 20px;
     }
     .section__servyprod img {
         width: 50%;
@@ -287,7 +321,11 @@ body{
 
 @media screen and (max-width: 500px) {
     .edificio_destacado p {
-        font-size: 19pt
+        font-size: 25px
+    }
+
+    .edificio_destacado .textochico {
+        font-size: 18px;
     }
     .edificio_destacado {
         padding-top: 200px;
