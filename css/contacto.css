@@ -1,39 +1,53 @@
 .seccion_contacto {
-    margin-top: 40px; /*Para generar espacio entre el borde superior y la imagen*/
-    padding: 100px 0 500px 10px;
+  margin-top: 40px; /* Para generar espacio entre el borde superior y la imagen */
+  padding: 100px 0 500px 0px;
 }
 .seccion_contacto .titulo {
-    padding: 150px 0 250px 50px;
-    background-color: #00BBF0;
-    text-align: left;
-    color: white;
+  background-color: #00BBF0;
+  padding: 110px 0 150px 50px;
 }
+
+.titulo h2 {
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+}
+
 .mapas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 80px;
 }
 
 .seccion_formulario {
-    background-color: #d2f5ff;
-}
-.logo_formulario img {
-    width: 50%;
+  background-color: #d2f5ff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: ce;
+  align-items: center;
 }
 .seccion_formulario form {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .seccion_formulario input:not(textarea) {
-    height: 40px;
+  height: 40px;
 }
 .seccion_formulario .boton {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 .seccion_formulario label {
-    color: #00BBF0;
-    font-weight: bold;
+  color: #00BBF0;
+  font-weight: bold;
 }
+
+.logo_formulario img {
+  width: 45%;
+  margin-left: 5%;
+}
+
+/*# sourceMappingURL=contacto.css.map */
