@@ -1,0 +1,416 @@
+/* ----- Estilos Globales ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES- siempre tiene que ir primero*/ 
+@import "variables";
+
+
+ul {
+    list-style-type: none;
+}
+h2,
+h2 a {
+    color: $colortitulos;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25pt;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+body{ 
+    font-family: $fuente; /*Tipogafia Web*/
+    color: $colorletras;
+    background-color: $colorbody;
+}
+/* ----- Fin - Estilos Globales ---- */
+
+
+/* ----- Encabezado ---- */
+
+.menu_general {
+    color: $colorletras;
+    font-size: 18pt;
+    font-weight: 500;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    .logo {
+        margin-left: 40px;
+    }
+    .fondo_blanco {
+        background-color: $colorsecundario;
+    }
+    .encabezadoceleste {
+        background-color: $colorfondoprincipal;
+        width: 100% ;
+        height: 40px;  
+    }
+}
+
+.navbar {
+    padding-top: 0;
+    .navbar-brand img {
+        height: 80px;
+     }
+    .navbar_links li {
+        margin-right: 25px;  
+        font-size: 20px;
+         }
+    .navbar_links a:hover {
+        color: $colorfondoprincipal;
+        }
+    .nav-link.active {
+        color: $colorfondoprincipal;
+        position: relative;
+    }
+    .navbar_links .nav-link.active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $colorfondoprincipal;
+        border-radius: 4px;
+        scale: 1;
+        transform-origin: left;
+        transition: scale 0.25s;
+    } 
+    .navbar_links .link_animacion {
+        position: relative;
+    }
+    .navbar_links .link_animacion::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $colorfondoprincipal;
+        border-radius: 4px;
+        scale: 0 1;
+        transform-origin: right;
+        transition: scale 0.25s;
+    }
+    .navbar_links .link_animacion:hover::before {
+        scale: 1;
+        transform-origin: left;
+    }
+    .navbar-toggler {
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 20px;
+    }
+}
+
+/* ----- Fin - Encabezado ---- */
+
+/* ----- main ---- */
+
+.edificio_destacado {
+    margin-top: 130px; /*Para generar espacio entre el borde superior y la imagen*/
+    background-image: url('../multimedia/Image\ Container.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 230px;
+    padding-bottom: 500px;
+    p {
+        font-size: 40px;
+        font-weight: bold;
+        color: $colorsecundario;  
+        padding-left: 15%;  
+        line-height: 150%;
+        display: block; opacity: 0; 
+        animation: movimiento 0.8s forwards var(--d);
+    }
+    @keyframes movimiento {
+        from {transform: translateY(20px);}
+        to { opacity: 1; transform: none;}
+    }
+    .textochico {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+}
+
+
+/* ----- Fin - Main---- */
+
+/* ----- nosotros ---- */
+
+.section__quienessomos {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: $colorfondoprincipal;
+    color: $colorsecundario;
+    a {
+        color: $colorsecundario;
+        transition-duration: 500ms;
+        &:hover {
+            transform: scale(1.02,1.02);
+        }
+        
+    }
+    p {
+        padding-top: 20px ; 
+        padding-left: 27%;
+        padding-right: 27%; 
+        font-size: 15pt;
+        
+    }
+
+    
+}
+/* ----- Fin nosotros ---- */
+
+/* ----- productos y servicios  ---- */
+
+.section__servyprod {
+        padding-bottom: 15%;
+        padding-top: 15%;
+        .publicoyprivado {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 4%;
+        }
+        img {
+            width: 500px;
+            transition-duration: 500ms;
+            &:hover {
+                transform: scale(1.02,1.02);
+            
+            }
+        }
+}
+/* ----- Fin productos y servicios  ---- */
+
+/* ----- concurso publico  ---- */
+
+.section__concursopublico {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    h2 a {
+        color: $colorsecundario;
+    }
+    .concursos { 
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;      
+    }
+    img {
+        margin-top: 4%;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 20%;
+        transition-duration: 500ms;
+        &:hover {
+            transform: scale(1.02,1.02);
+        }
+    }
+    background: linear-gradient(to bottom, $colorfondoprincipal, #d3f5fe)    
+}
+
+/* ----- fin concurso publico  ---- */
+
+/* ----- pregutas frecuentes  ---- */
+
+.section__preguntafrecuente {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    .preguntas { 
+        padding-top: 4%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        transition-duration: 500ms;
+        &:hover {
+            transform: scale(1.02,1.02);
+        }
+    }
+    img { width: 50%;
+    }
+}
+
+
+/* ----- fin pregunts frecuentes  ---- */
+
+ /* ----- Pie de pagina ---- */
+
+ .footerceleste2 {
+    background-color: $colorfondoprincipal;
+    width: 100% ;
+    height: 500px;  
+    .logoabajo {
+        height: 150px;
+        margin-left: 4%;
+        margin-top: 20px;
+    }
+    .redessociales {
+        margin-top: 260px;
+        margin-left: 3%; 
+    }
+    .redessociales li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .redessociales li i {
+        font-size: 30px;
+        color: $colorsecundario;
+    }
+}
+/* ----- Fin - Pie de pagina ---- */
+
+/* Para modificar comportamientos que tengan cosas similares a col-xl */
+
+@media screen and (max-width: 1200px) {
+    .navbar_links li {
+        text-align: right;
+    }
+
+
+    .edificio_destacado p {
+        font-size: 36px;
+        padding-left: 14%;  
+    }
+
+    .edificio_destacado .textochico {
+        font-size: 26px;
+    }
+
+    .section__quienessomos p { 
+        padding-left: 20%;
+        padding-right: 20%;      
+        font-size: 14pt;
+       
+    }
+
+    h2,
+    h2 a{
+       font-size: 25pt;
+   }
+
+
+}
+@media screen and (max-width: 992px) {
+  
+    .edificio_destacado p {
+       padding-left: 10%;  
+        
+
+    }
+    .section__preguntafrecuente .preguntas img {
+        width: 80%;
+    }
+
+    .section__servyprod img {
+        width: 300px;
+    }
+
+    .section__servyprod {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+     }
+
+     .section__quienessomos p {
+        padding-left: 15%;
+        padding-right: 15%;      
+        font-size: 13pt;
+
+
+    }
+    h2,
+    h2 a{
+       font-size: 22pt;
+   }
+
+
+
+}
+@media screen and (max-width: 768px) {
+    .edificio_destacado p {
+        font-size: 27px;
+        padding-left: 10%;
+    }
+    .edificio_destacado .textochico {
+        font-size: 20px;
+    }
+    .section__servyprod img {
+        width: 50%;
+    }
+    
+    .section__concursopublico .concursos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section__preguntafrecuente .preguntas img {
+        width: 90%;
+    }
+
+    h2,
+    h2 a{
+       font-size: 20pt;
+   }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .edificio_destacado p {
+        font-size: 21px
+    }
+
+    .edificio_destacado .textochico {
+        font-size: 17px;
+    }
+    .edificio_destacado {
+        padding-top: 200px;
+        padding-bottom: 400px;
+    }
+    p {
+        font-size: 10pt;
+    }
+
+    h2,
+     h2 a{
+        font-size: 15pt;
+    }
+
+    .section__quienessomos p {
+        padding-left: 8%;
+        padding-right: 8%;      
+        font-size: 10pt;
+
+    }
+
+    .section__servyprod .publicoyprivado{
+        padding-top: 50px;
+    }
+
+    .section__concursopublico img{
+        width: 50%;
+
+    }
+    .section__preguntafrecuente .preguntas{
+        padding-top: 50px;
+    }
+
+}
+
