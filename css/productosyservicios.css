@@ -1,0 +1,16 @@
+.seccion_contacto {
+  margin-top: 40px; /* Para generar espacio entre el borde superior y la imagen */
+  padding: 100px 0 500px 0px;
+}
+.seccion_contacto .titulo {
+  background-color: #00BBF0;
+  padding: 110px 0 150px 50px;
+}
+
+.titulo h2 {
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=productosyservicios.css.map */
