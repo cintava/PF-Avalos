@@ -12,15 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">  
     <!--favicon-->
     <link rel="shortcut icon" href="multimedia/Logotipo_FdNColor copia.png" type="image/x-icon">
-
     <!-- Iconos de instragram -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
     <!--boostrap-->
-    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">  
     <!-- link de CSS propio-->
     <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="Fiduciaria del Norte. Acompañamos a las PyMES acercando alternativas de financiamiento a medida de sus necesidades">
+    <meta name="keywords" content="Fiduciaria del Norte, Fiduciaria, Chaco, Finanza, PyMES, Sector público, Sector privado">
 
 </head>
 
@@ -73,13 +74,15 @@
     </main>
 
     <section class="section__quienessomos row" id="quienes_somos"> <!-- seccion del sitio -->
-        <h2>
-            <a href="#quienes_somos"> Fiduciaria Del Norte S.A.  </a>
-        </h2>
-        <p>
-            Somos una empresa que brinda soluciones financieras integrales que contribuyen al desarrollo económico del sector público y privado de la región y el país.
-            Nos especializamos en diseñar herramientas financieras innovadoras. Contamos con un equipo interdisciplinario de profesionales con amplia y destacada trayectoria en el ámbito financiero, legal, impositivo, contable y de negocios.     
-        </p>
+        <div class="text2" data-aos="fade-up" data-aos-duration="2000" >
+            <h1>
+                <a href="#quienes_somos"> Fiduciaria Del Norte S.A.  </a>
+            </h1>
+            <p>
+                Somos una empresa que brinda soluciones financieras integrales que contribuyen al desarrollo económico del sector público y privado de la región y el país.
+                Nos especializamos en diseñar herramientas financieras innovadoras. Contamos con un equipo interdisciplinario de profesionales con amplia y destacada trayectoria en el ámbito financiero, legal, impositivo, contable y de negocios.     
+            </p>
+        </div>
     </section>
 
     <section class="section__servyprod row" id="productos_y_servicios" >
@@ -129,6 +132,10 @@
     </footer>
 
     <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 

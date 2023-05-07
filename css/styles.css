@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-/* VARIABLES- siempre tiene que ir primero*/
+/* Import- siempre tiene que ir primero*/
 /* VARIABLES*/
 ul {
   list-style-type: none;
 }
 
-h2,
+h2, h1 a, h1,
 h2 a {
   color: #2B347C;
   text-align: center;
@@ -41,11 +41,9 @@ body {
   top: 0;
   left: 0;
 }
-.menu_general .logo {
-  margin-left: 40px;
-}
 .menu_general .fondo_blanco {
   background-color: #ffffff;
+  padding: 0 140px;
 }
 .menu_general .encabezadoceleste {
   background-color: #00BBF0;
@@ -156,10 +154,6 @@ body {
 }
 .section__quienessomos a {
   color: #ffffff;
-  transition-duration: 500ms;
-}
-.section__quienessomos a:hover {
-  transform: scale(1.02, 1.02);
 }
 .section__quienessomos p {
   padding-top: 20px;
@@ -247,12 +241,12 @@ body {
 }
 .footerceleste2 .logoabajo {
   height: 150px;
-  margin-left: 4%;
+  margin-left: 2%;
   margin-top: 20px;
 }
 .footerceleste2 .redessociales {
   margin-top: 260px;
-  margin-left: 3%;
+  margin-left: 1%;
 }
 .footerceleste2 .redessociales li {
   display: inline-block;
