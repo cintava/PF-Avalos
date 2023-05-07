@@ -1,1 +1,61 @@
 
+.navbar {
+    .navbar_links .link_animacion {
+        position: relative;
+    }
+    .navbar_links .link_animacion::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $colorfondoprincipal;
+        border-radius: 4px;
+        scale: 0 1;
+        transform-origin: right;
+        transition: scale 0.25s;
+    }
+    .navbar_links .link_animacion:hover::before {
+        scale: 1;
+        transform-origin: left;
+    }
+}
+
+.edificio_destacado {
+    p {
+        display: block; opacity: 0; 
+        animation: movimiento 0.8s forwards var(--d);
+    }
+    @keyframes movimiento {
+        from {transform: translateY(20px);}
+        to { opacity: 1; transform: none;}
+    }
+}
+
+.section__servyprod {
+    img {
+        transition-duration: 500ms;
+        &:hover {
+            transform: scale(1.02,1.02);
+        }
+    }
+}
+
+.section__concursopublico {
+    img {
+        transition-duration: 500ms;
+        &:hover {
+            transform: scale(1.02,1.02);
+        }
+    }
+}
+
+.section__preguntafrecuente {
+    img {
+        transition-duration: 500ms;
+        &:hover {
+            transform: scale(1.02,1.02);
+        }
+    }
+}

@@ -43,6 +43,7 @@ body{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 9;
     .fondo_blanco {
         background-color: $colorsecundario;
         padding: 0 140px;
@@ -83,27 +84,6 @@ body{
         scale: 1;
         transform-origin: left;
         transition: scale 0.25s;
-    } 
-
-    .navbar_links .link_animacion {
-    position: relative;
-}
-    .navbar_links .link_animacion::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $colorfondoprincipal;
-    border-radius: 4px;
-    scale: 0 1;
-    transform-origin: right;
-    transition: scale 0.25s;
- }
-    .navbar_links .link_animacion:hover::before {
-    scale: 1;
-    transform-origin: left;
     }
     .navbar-toggler {
         font-size: 12pt;
@@ -129,12 +109,6 @@ body{
         color: $colorsecundario;  
         padding-left: 15%;  
         line-height: 150%;
-        display: block; opacity: 0; 
-        animation: movimiento 0.8s forwards var(--d);
-    }
-    @keyframes movimiento {
-        from {transform: translateY(20px);}
-        to { opacity: 1; transform: none;}
     }
     .textochico {
         font-size: 30px;
@@ -180,10 +154,6 @@ body{
         }
         img {
             width: 500px;
-            transition-duration: 500ms;
-            &:hover {
-                transform: scale(1.02,1.02);
-            }
         }
 }
 /* ----- Fin productos y servicios  ---- */
@@ -207,10 +177,6 @@ body{
         margin-left: 10px;
         margin-right: 10px;
         width: 20%;
-        transition-duration: 500ms;
-        &:hover {
-            transform: scale(1.02,1.02);
-        }
     }
     background: linear-gradient(to bottom, $colorfondoprincipal, #d3f5fe)    
 }
@@ -229,12 +195,13 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        transition-duration: 500ms;
-        &:hover {
-            transform: scale(1.02,1.02);
-        }
+        // transition-duration: 500ms;
+        // &:hover {
+        //     transform: scale(1.02,1.02);
+        // }
     }
-    img { width: 50%;
+    img {
+        width: 50%;
     }
 }
 
