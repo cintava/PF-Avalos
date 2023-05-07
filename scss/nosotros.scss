@@ -1,4 +1,8 @@
-.seccion_contacto {
+@import "variables";
+@import "animaciones";
+
+
+.seccion_nosotros {
     margin-top: 40px; /* Para generar espacio entre el borde superior y la imagen */
     padding: 100px 0 500px 0px;
     .titulo  {
@@ -10,5 +14,43 @@
 .titulo h2 {
     text-align: left;
     color: white;
-    margin-left: 20px;
+    margin-left: 5%;
 }
+
+
+
+.textoprincipal{
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+    .oscuro {
+        font-weight: bold;
+        margin-top: 5%;
+    }
+}
+
+.misionyvision {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    img {
+        width: 400px;
+    }
+}
+
+.autoridades {
+    padding-top: 10%;
+   .personal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            width: 350px;
+            padding: 20px 20px;
+        }
+    }
+}
+
