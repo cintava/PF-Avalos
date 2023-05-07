@@ -1,3 +1,7 @@
+@import "variables";
+@import "animaciones";
+
+
 .seccion_contacto {
     margin-top: 40px; /* Para generar espacio entre el borde superior y la imagen */
     padding: 100px 0 500px 0px;
@@ -10,7 +14,7 @@
 .titulo h2 {
     text-align: left;
     color: white;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 .mapas {
     display: flex;
