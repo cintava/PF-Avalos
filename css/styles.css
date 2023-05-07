@@ -81,6 +81,14 @@ body {
   background-color: #f5f5f5;
 }
 
+.lista-desordenada li {
+  list-style: disc;
+}
+
+body {
+  padding-top: 130px; /* Para generar espacio entre el borde superior y la imagen */
+}
+
 /* ----- Fin - Estilos Globales ---- */
 /* ----- Encabezado ---- */
 .menu_general {
@@ -142,7 +150,6 @@ body {
 /* ----- Fin - Encabezado ---- */
 /* ----- main ---- */
 .edificio_destacado {
-  margin-top: 130px; /*Para generar espacio entre el borde superior y la imagen*/
   background-image: url("../multimedia/Image Container.png");
   background-repeat: no-repeat;
   background-size: cover;
