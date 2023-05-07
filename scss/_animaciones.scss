@@ -33,25 +33,11 @@
     }
 }
 
-.section__servyprod {
-    img {
-        transition-duration: 500ms;
-        &:hover {
-            transform: scale(1.02,1.02);
-        }
-    }
-}
-
-.section__concursopublico {
-    img {
-        transition-duration: 500ms;
-        &:hover {
-            transform: scale(1.02,1.02);
-        }
-    }
-}
-
-.section__preguntafrecuente {
+.section__servyprod,
+.section__concursopublico,
+.section__preguntafrecuente,
+.autoridades,
+.misionyvision {
     img {
         transition-duration: 500ms;
         &:hover {
