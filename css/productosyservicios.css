@@ -35,18 +35,24 @@
   }
 }
 
-.section__servyprod img,
-.section__concursopublico img,
+.prodyserv img,
+.concurso img,
 .section__preguntafrecuente img,
 .autoridades img,
-.misionyvision img {
+.misionyvision img,
+.mapas img,
+.publicoyprivado img,
+.concursos img {
   transition-duration: 500ms;
 }
-.section__servyprod img:hover,
-.section__concursopublico img:hover,
+.prodyserv img:hover,
+.concurso img:hover,
 .section__preguntafrecuente img:hover,
 .autoridades img:hover,
-.misionyvision img:hover {
+.misionyvision img:hover,
+.mapas img:hover,
+.publicoyprivado img:hover,
+.concursos img:hover {
   transform: scale(1.02, 1.02);
 }
 
@@ -75,11 +81,13 @@
 }
 
 .prodyserv {
+  padding-top: 40px;
+}
+.prodyserv div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 40px;
 }
 .prodyserv img {
   width: 400px;

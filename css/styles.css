@@ -43,18 +43,24 @@
   }
 }
 
-.section__servyprod img,
-.section__concursopublico img,
+.prodyserv img,
+.concurso img,
 .section__preguntafrecuente img,
 .autoridades img,
-.misionyvision img {
+.misionyvision img,
+.mapas img,
+.publicoyprivado img,
+.concursos img {
   transition-duration: 500ms;
 }
-.section__servyprod img:hover,
-.section__concursopublico img:hover,
+.prodyserv img:hover,
+.concurso img:hover,
 .section__preguntafrecuente img:hover,
 .autoridades img:hover,
-.misionyvision img:hover {
+.misionyvision img:hover,
+.mapas img:hover,
+.publicoyprivado img:hover,
+.concursos img:hover {
   transform: scale(1.02, 1.02);
 }
 
@@ -103,7 +109,7 @@ body {
 }
 .menu_general .fondo_blanco {
   background-color: #ffffff;
-  padding: 0 140px;
+  padding: 0 90px;
 }
 .menu_general .encabezadoceleste {
   background-color: #00BBF0;
@@ -203,7 +209,7 @@ body {
   margin-top: 4%;
 }
 .section__servyprod img {
-  width: 500px;
+  width: 450px;
 }
 
 /* ----- Fin productos y servicios  ---- */
@@ -226,7 +232,7 @@ body {
   margin-top: 4%;
   margin-left: 10px;
   margin-right: 10px;
-  width: 20%;
+  width: 400px;
 }
 
 /* ----- fin concurso publico  ---- */
@@ -244,7 +250,7 @@ body {
   justify-content: center;
 }
 .section__preguntafrecuente img {
-  width: 50%;
+  width: 800px;
 }
 
 /* ----- fin pregunts frecuentes  ---- */
@@ -294,16 +300,16 @@ body {
   h2 a {
     font-size: 25pt;
   }
+  .menu_general .fondo_blanco {
+    padding: 0 30px;
+  }
 }
 @media screen and (max-width: 992px) {
   .edificio_destacado p {
     padding-left: 10%;
   }
   .section__preguntafrecuente .preguntas img {
-    width: 80%;
-  }
-  .section__servyprod img {
-    width: 300px;
+    width: 600px;
   }
   .section__servyprod {
     display: flex;
@@ -311,12 +317,16 @@ body {
     flex-wrap: wrap;
     align-items: center;
   }
+  .section__servyprod img {
+    width: 400px;
+  }
   .section__quienessomos p {
     padding-left: 15%;
     padding-right: 15%;
     font-size: 13pt;
   }
-  h2,
+  h2, h1,
+  h1 a,
   h2 a {
     font-size: 22pt;
   }
@@ -329,9 +339,6 @@ body {
   .edificio_destacado .textochico {
     font-size: 20px;
   }
-  .section__servyprod img {
-    width: 50%;
-  }
   .section__concursopublico .concursos {
     display: flex;
     flex-direction: column;
@@ -340,17 +347,18 @@ body {
   .section__preguntafrecuente .preguntas img {
     width: 90%;
   }
-  h2,
+  h2, h1,
+  h1 a,
   h2 a {
     font-size: 20pt;
   }
 }
 @media screen and (max-width: 500px) {
   .edificio_destacado p {
-    font-size: 21px;
+    font-size: 23px;
   }
   .edificio_destacado .textochico {
-    font-size: 17px;
+    font-size: 18px;
   }
   .edificio_destacado {
     padding-top: 200px;
@@ -359,7 +367,8 @@ body {
   p {
     font-size: 10pt;
   }
-  h2,
+  h2, h1,
+  h1 a,
   h2 a {
     font-size: 15pt;
   }
@@ -368,14 +377,17 @@ body {
     padding-right: 8%;
     font-size: 10pt;
   }
-  .section__servyprod .publicoyprivado {
-    padding-top: 50px;
-  }
   .section__concursopublico img {
     width: 50%;
   }
   .section__preguntafrecuente .preguntas {
     padding-top: 50px;
+  }
+  .section__servyprod .publicoyprivado {
+    padding-top: 50px;
+  }
+  .section__servyprod img {
+    width: 300px;
   }
 }
 
