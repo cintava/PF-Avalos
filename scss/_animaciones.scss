@@ -33,11 +33,14 @@
     }
 }
 
-.section__servyprod,
-.section__concursopublico,
+.prodyserv,
+.concurso,
 .section__preguntafrecuente,
 .autoridades,
-.misionyvision {
+.misionyvision,
+.mapas,
+.publicoyprivado,
+.concursos {
     img {
         transition-duration: 500ms;
         &:hover {
