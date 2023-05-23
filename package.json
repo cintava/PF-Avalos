@@ -15,5 +15,8 @@
     "url": "https://github.com/cintava/PF-Avalos/issues"
   },
   "homepage": "https://github.com/cintava/PF-Avalos#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
 }

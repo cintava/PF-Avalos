@@ -4,4 +4,17 @@ $colorsecundario: #ffffff;
 $colorletras: #6A6A6A; 
 $colorbody: #f5f5f5;
 $colortitulos: #2B347C; 
+$colorsuave: #d2f5ff;
 $fuente:'Montserrat', sans-serif;
+
+
+// /*Boostrap 5.2.3*/
+$accordion-button-active-color: $colorsecundario;
+$accordion-button-color: $colorfondoprincipal;
+$accordion-color: $colorletras;
+$accordion-button-active-bg: $colorfondoprincipal;
+$font-size-base: 1.1rem;
+$accordion-border-radius: 1.5rem; 
+$accordion-inner-border-radius: calc(1.5rem - 1px);
+$accordion-body-padding-x: 2rem;
+$accordion-body-padding-y: 2rem;

@@ -1,3 +1,8 @@
+/* Import- siempre tiene que ir primero*/ 
+@import "variables";
+@import "animaciones";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 /* ----- Estilos Globales ---- */
 * {
     margin: 0;
@@ -5,9 +10,7 @@
     box-sizing: border-box;
 }
 
-/* Import- siempre tiene que ir primero*/ 
-@import "variables";
-@import "animaciones";
+
 
 
 
@@ -193,6 +196,8 @@ body {
 
 /* ----- pregutas frecuentes  ---- */
 
+
+
 .section__preguntafrecuente {
     padding-top: 15%;
     padding-bottom: 15%;
@@ -203,13 +208,13 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        // transition-duration: 500ms;
-        // &:hover {
-        //     transform: scale(1.02,1.02);
-        // }
-    }
-    img {
-        width: 800px;
+        .accordion {
+            width: 50%; 
+        }
+        .accordion-button{
+            padding: 40px;
+        }
+       
     }
 }
 
