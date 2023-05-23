@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cintava/PreEntrega3-Avalos.git"
+    "url": "git+https://github.com/cintava/PF-Avalos.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cintava/PreEntrega3-Avalos/issues"
+    "url": "https://github.com/cintava/PF-Avalos/issues"
   },
-  "homepage": "https://github.com/cintava/PreEntrega3-Avalos#readme",
+  "homepage": "https://github.com/cintava/PF-Avalos#readme",
   "description": ""
 }
