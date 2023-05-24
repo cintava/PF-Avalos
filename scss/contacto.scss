@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: ce;    
+    justify-content: center;    
     align-items: center;
     form {
         padding-top: 40px;
@@ -54,4 +54,22 @@
 .mapas h3 {
     color: $colorfondoprincipal ;
     padding-top: 40px;
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .mapas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 80px;
+        h3, p {
+            margin-left: 20px;
+        }
+    
+        
+        
+    }
 }

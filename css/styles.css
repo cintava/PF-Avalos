@@ -11112,7 +11112,7 @@ body {
 @media screen and (max-width: 768px) {
   .edificio_destacado p {
     font-size: 27px;
-    padding-left: 10%;
+    padding-left: 8%;
   }
   .edificio_destacado .textochico {
     font-size: 20px;
@@ -11122,15 +11122,28 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .section__preguntafrecuente .preguntas img {
-    width: 90%;
+  .section__preguntafrecuente .preguntas {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  h2, .h2, h1, .h1,
-  h1 a,
-  .h1 a,
-  h2 a,
-  .h2 a {
+  .section__preguntafrecuente .preguntas h2, .section__preguntafrecuente .preguntas .h2, .section__preguntafrecuente .preguntas h1, .section__preguntafrecuente .preguntas .h1,
+  .section__preguntafrecuente .preguntas h1 a,
+  .section__preguntafrecuente .preguntas .h1 a,
+  .section__preguntafrecuente .preguntas h2 a,
+  .section__preguntafrecuente .preguntas .h2 a {
     font-size: 20pt;
+  }
+  .section__preguntafrecuente .preguntas .accordion {
+    width: 80%;
+  }
+  .section__preguntafrecuente .preguntas .accordion-button {
+    padding: 20px;
+  }
+  .section__preguntafrecuente .preguntas h3, .section__preguntafrecuente .preguntas .h3 {
+    font-size: 5pt;
   }
 }
 @media screen and (max-width: 500px) {
@@ -11164,6 +11177,19 @@ body {
   }
   .section__preguntafrecuente .preguntas {
     padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section__preguntafrecuente .preguntas .accordion {
+    width: 80%;
+  }
+  .section__preguntafrecuente .preguntas .accordion-button {
+    padding: 20px;
+  }
+  .section__preguntafrecuente .preguntas h3, .section__preguntafrecuente .preguntas .h3 {
+    font-size: 5pt;
   }
   .section__servyprod .publicoyprivado {
     padding-top: 50px;
