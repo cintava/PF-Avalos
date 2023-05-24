@@ -11182,9 +11182,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .section__preguntafrecuente .preguntas .accordion {
-    width: 80%;
-  }
   .section__preguntafrecuente .preguntas .accordion-button {
     padding: 20px;
   }

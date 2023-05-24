@@ -2,13 +2,9 @@
 @import "animaciones";
 
 
-.seccion_nosotros {
-    padding: 100px 0 500px 0px;
-    .titulo  {
+.seccion_nosotros .titulo  { 
         background-color: #00BBF0;
-        padding: 110px 0 150px 50px;
-        
-    }
+        padding: 110px 0 150px 50px;  
 }
 .titulo h2 {
     text-align: left;
