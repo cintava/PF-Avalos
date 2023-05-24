@@ -1,0 +1,5 @@
+Antes ejecutabas:
+sass --watch scss:css
+
+Como ahora no anda porque la vida es injusta, tenes que ejecutar:
+sass-watch
